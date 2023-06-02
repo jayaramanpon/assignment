@@ -1,6 +1,7 @@
 
 import Buttons from './Buttons';
 import Content from './Content';
+import Table from './Table';
 import { useState } from 'react';
 import './index.css'
 import { useEffect } from 'react';
@@ -30,11 +31,11 @@ function App() {
   return (
     <div>
       <Buttons 
+      reqType = {reqType}
         setReqType={setReqType}
       />
-      <Content 
-        content = {content}
-      />
+      <Table content={content}/>
+      {/*<Content content = {content}/>*/}
     </div>
   );
 }

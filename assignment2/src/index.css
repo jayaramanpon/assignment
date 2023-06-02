@@ -40,3 +40,17 @@ section {
  
   border: solid 2px;
 }
+
+
+table {
+  font-family: sans-serif;
+}
+
+table td {
+  background-color:#eee;  
+  padding:.25em .5em;
+    text-align:left;
+    &:nth-child(2) {
+      text-align:right;
+    }  
+}
